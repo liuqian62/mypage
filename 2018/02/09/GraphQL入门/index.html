@@ -124,7 +124,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="GraphQL入门">
 <meta property="og:url" content="http://www.xuanbiyijue.com/2018/02/09/GraphQL入门/index.html">
-<meta property="og:site_name" content="悬笔e绝">
+<meta property="og:site_name" content="lirich674">
 <meta property="og:description" content="GraphQL简介GraphQL 是一种用于 API 的查询语言。它使得客户端能够准确地获得它需要的数据，而且没有任何冗余 特点不多不少的请求你需要的数据发出一个 GraphQL 请求就能准确获得你想要的数据，不多不少。 GraphQL 查询总是返回可预测的结果。使用 GraphQL 的应用可以工作得又快又稳，因为控制数据的是应用，而不是服务器。 获取多个资源只需要用一个请求GraphQL 查询不">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.xuanbiyijue.com/2018/02/09/GraphQL入门/1.gif">
@@ -154,7 +154,7 @@
     site: {
       title: '火の意志',
       subtitle: '',
-      author: '悬笔e绝'
+      author: 'lirich674'
     },
     duoshuo: {
       userId: '0',
@@ -196,7 +196,7 @@
 
 
 
-  <title>GraphQL入门 | 悬笔e绝</title>
+  <title>GraphQL入门 | lirich674</title>
   
 
 
@@ -411,7 +411,7 @@
 					</div>
 					<div class="slide">
 						<div class="slide__bg slide__bg--9"></div>
-						<h2 class="word word--9">悬笔e绝</h2>
+						<h2 class="word word--9">lirich674</h2>
 					</div>
 				</div>
 				<nav class="slidenav">
@@ -436,8 +436,8 @@
 				<h2 class="word word--playful">悬笔<i>345</i>E绝</h2>
 			</section>
 		</div>
-    <a class="site-master-avatar" href="/images/悬笔e绝马赛克拼图.jpeg" target="_blank" title="logo">
-      <img class="site-master-avatar" itemprop="image" src="/images/悬笔e绝.jpg" alt="悬笔e绝" />
+    <a class="site-master-avatar" href="/images/lirich674马赛克拼图.jpeg" target="_blank" title="logo">
+      <img class="site-master-avatar" itemprop="image" src="/images/游泳.gif" alt="lirich674" />
     </a>
 </div>
 
@@ -484,13 +484,13 @@
     <link itemprop="mainEntityOfPage" href="http://www.xuanbiyijue.com/2018/02/09/GraphQL入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="悬笔e绝">
+      <meta itemprop="name" content="lirich674">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/悬笔e绝.jpg">
+      <meta itemprop="image" content="/images/游泳.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="悬笔e绝">
+      <meta itemprop="name" content="lirich674">
     </span>
 
     
@@ -647,11 +647,11 @@
 <blockquote><p>user是查询的operation<br>(id: 1)包含了传入给Query的参数<br>查询包含id和name字段，这些字段也就是我们希望查询可以返回的数据</p>
 </blockquote>
 <p>这时server返回的数据就类似下面这种：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"user"</span>: &#123;</span><br><span class="line">      <span class="string">"id"</span>: <span class="string">"1"</span>,</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"悬笔e绝"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"user"</span>: &#123;</span><br><span class="line">      <span class="string">"id"</span>: <span class="string">"1"</span>,</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"lirich674"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="第二个demo"><a href="#第二个demo" class="headerlink" title="第二个demo"></a>第二个demo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">query &#123;</span><br><span class="line">  student(class_id: 1, order: <span class="string">"number DESC"</span>) &#123;</span><br><span class="line">    name </span><br><span class="line">    class_id</span><br><span class="line">    number</span><br><span class="line">    hometown </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这次我们查询student，并传入两个参数：class_id班号用于过滤，order指明按照number学号进行降序排列。查询中包含的字段是：name、class_id、number和hometown）</p>
 <p>应该能猜到返回的结果是什么样的了，没错，大概如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"student"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"悬笔e绝"</span>,</span><br><span class="line">        <span class="string">" class_id "</span>: 1,</span><br><span class="line">        <span class="string">" number "</span>: 16,</span><br><span class="line">        <span class="string">" hometown "</span>: jiujiang</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"li"</span>,</span><br><span class="line">        <span class="string">" class_id "</span>:1,</span><br><span class="line">        <span class="string">" number "</span>: 15,</span><br><span class="line">        <span class="string">" hometown "</span>:Shenzhen</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"student"</span>: [</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"lirich674"</span>,</span><br><span class="line">        <span class="string">" class_id "</span>: 1,</span><br><span class="line">        <span class="string">" number "</span>: 16,</span><br><span class="line">        <span class="string">" hometown "</span>: jiujiang</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"li"</span>,</span><br><span class="line">        <span class="string">" class_id "</span>:1,</span><br><span class="line">        <span class="string">" number "</span>: 15,</span><br><span class="line">        <span class="string">" hometown "</span>:Shenzhen</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>从上面两个例子里可以看出来GraphQL允许客户端明确指定它要的是什么，避免了数据后去的冗余或者不足。而RESTful API ，每一个客户端都会对应很多个RESTful API或者一个API要服务很多个客户端。<br>所以说GraphQL是很好的查询语言。所有的operation、参数和所有可以查询的字段都需要在GraphQL server上定义、实现。</p>
 <h4 id="嵌套查询"><a href="#嵌套查询" class="headerlink" title="嵌套查询"></a>嵌套查询</h4><p>查询的嵌套没有限制，全看我们的查询和server的实现。比如可以使用下面的查询：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  purchases(client_id: 1) &#123;</span><br><span class="line">    date</span><br><span class="line">    quantity</span><br><span class="line">    total</span><br><span class="line">    product &#123;</span><br><span class="line">      name</span><br><span class="line">      price</span><br><span class="line">      product_category &#123;</span><br><span class="line">        name</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    client &#123;</span><br><span class="line">      name</span><br><span class="line">      dob</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -661,7 +661,7 @@
 <p>由于GraphQL查询都是结构化的，信息也是类树结构展示的。我们可以这么简单的理解：值类型（Scalar Type）–叶子，对象类型（Object Type）–树干。</p>
 <h4 id="字段别名"><a href="#字段别名" class="headerlink" title="字段别名"></a>字段别名</h4><p>在GraphQL查询中可以为Operation里的字段指定别名。<br>比如查询里指定了字段hometown，但是客户端只能接受jiaxiang。<br>因为查询的返回结果都包含在以operation名称为key的对象里，所以可以为这个名称设置一个别名：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  MrLi_student: student (class_id: 1) &#123;</span><br><span class="line">    class_id</span><br><span class="line">    name</span><br><span class="line">    jiaxiang: hometown</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>返回的数据类似这样：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">" MrLi_student "</span>: &#123;</span><br><span class="line">      <span class="string">" class_id "</span>: <span class="string">"1"</span>,</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"悬笔e绝 "</span>,</span><br><span class="line">      <span class="string">" jiaxiang "</span>: <span class="string">"jiujiang"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>返回的数据类似这样：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">" MrLi_student "</span>: &#123;</span><br><span class="line">      <span class="string">" class_id "</span>: <span class="string">"1"</span>,</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"lirich674 "</span>,</span><br><span class="line">      <span class="string">" jiaxiang "</span>: <span class="string">"jiujiang"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h4 id="其他查询的功能"><a href="#其他查询的功能" class="headerlink" title="其他查询的功能"></a>其他查询的功能</h4><h5 id="Fragments"><a href="#Fragments" class="headerlink" title="Fragments"></a>Fragments</h5><p>一次查询的两个对象中包含了大量相同片段的时候，可以把重复的字段都提出来，放到一个fragment里；<br>用操作符“…” 就可以使用fragment了</p>
 <h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>查询参数多处使用的时候，我们可以定义一个变量来方便使用</p>
 <h3 id="修改Mutation"><a href="#修改Mutation" class="headerlink" title="修改Mutation"></a>修改Mutation</h3><p>GraphQL不仅可以用来查询数据，也可以创建、更新和销毁数据。<br>当然和查询一样，这些也需要server端有对应的实现。<br>增、删、改一类的operation在GraphQL里统称为Muration（修改）。<br>下面通过几个例子来演示一下mutation。</p>
@@ -683,7 +683,7 @@
 <h3 id="搭建一个简单的基于node的GraphQL-Server"><a href="#搭建一个简单的基于node的GraphQL-Server" class="headerlink" title="搭建一个简单的基于node的GraphQL Server"></a>搭建一个简单的基于node的GraphQL Server</h3><h4 id="第一步初始化项目"><a href="#第一步初始化项目" class="headerlink" title="第一步初始化项目"></a>第一步初始化项目</h4><p>创建工程目录 graphqlDemo<br>初始化项目，以及引入所需的包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm init -f</span><br><span class="line">npm install graphql express express-graphql --save</span><br><span class="line">npm install babel-cli babel-preset-es2015 --save-dev</span><br><span class="line">npm install -g nodemon</span><br></pre></td></tr></table></figure>
 <h4 id="第二步-mock数据"><a href="#第二步-mock数据" class="headerlink" title="第二步 mock数据"></a>第二步 mock数据</h4><p>在项目根目录下创建 data 目录，并在该目录下创建 data.json 文件，并输入以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"1"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"悬笔e绝"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"2"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"li"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"3"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"张三"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"1"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"1"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"lirich674"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"2"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"2"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"li"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">"3"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"3"</span>,</span><br><span class="line">        <span class="string">"name"</span>: <span class="string">"张三"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="第三步-创建server-js文件"><a href="#第三步-创建server-js文件" class="headerlink" title="第三步 创建server.js文件"></a>第三步 创建server.js文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import express from <span class="string">'express'</span></span><br><span class="line"></span><br><span class="line">const app = express()</span><br><span class="line">const port = 3000</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    res.send(<span class="string">'Hello!'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="built_in">let</span> server = app.listen(port, <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    console.log(<span class="string">'server Start, Listening on 3000端口'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>命令行运行：nodemon –exec babel-node –presets=es2015 server.js，<br>浏览器输入：<a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a> 。显示 Hello!，说明你的 express 服务已经 OK 了。</p>
 <h4 id="第四步-编写GraphQL-Schema"><a href="#第四步-编写GraphQL-Schema" class="headerlink" title="第四步 编写GraphQL Schema"></a>第四步 编写GraphQL Schema</h4><p>创建文件夹 /src/schema，并创建文件 index.js。<br>并在 index.js 文件中编写GraphQL Schema。Schema 是 GraphQL 请求的入口，用户请求的<br>GraphQL 将会对应到具体的 Schema。</p>
@@ -694,7 +694,7 @@
 <p>在左边的空白处输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  user(id: 1) &#123;</span><br><span class="line">    name</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>点击“运行”按钮，右边会出现结果：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"user"</span>: &#123;</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"悬笔e绝"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"data"</span>: &#123;</span><br><span class="line">    <span class="string">"user"</span>: &#123;</span><br><span class="line">      <span class="string">"name"</span>: <span class="string">"lirich674"</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>至此我们对GraphQL有了初步的认识，并且搭建了一个简单的node端的 GraphQL server<br>更深入的了解，可以查阅官方文档，连接如下：</p>
 <p><a href="http://facebook.github.io/graphql/October2016/" target="_blank" rel="noopener">GraphQL官方文档</a></p>
 
@@ -717,7 +717,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>Post author:</strong>
-    悬笔e绝
+    lirich674
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
@@ -778,19 +778,19 @@
   <div id="QR" style="display: none;">
 
     <div id="donateImg">
-        <img id="donateCute" src="/images/donateCute.jpg" style="width: 100%;" alt="悬笔e绝"/>
+        <img id="donateCute" src="/images/donateCute.jpg" style="width: 100%;" alt="lirich674"/>
     </div>
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.png" alt="悬笔e绝 WeChat Pay"/>
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="lirich674 WeChat Pay"/>
         <p>WeChat Pay</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="悬笔e绝 Alipay"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="lirich674 Alipay"/>
         <p>Alipay</p>
       </div>
     
@@ -940,10 +940,10 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/card.jpg"
-                alt="悬笔e绝" />
+                src="/images/dog.jfif"
+                alt="lirich674" />
             
-              <p class="site-author-name" itemprop="name">悬笔e绝</p>
+              <p class="site-author-name" itemprop="name">lirich674</p>
               <p class="site-description motion-element" itemprop="description">敲代码最溜的BBOY🏃 Breaking最炸的程序猿👨‍💻‍~</p>
           </div>
 
@@ -1042,7 +1042,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.xuanbiyijue.com/" title="悬笔e绝" target="_blank">悬笔e绝</a>
+                    <a href="http://www.xuanbiyijue.com/" title="lirich674" target="_blank">lirich674</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -1099,11 +1099,11 @@
             <p>网站已运行：<span id="since"></span></p>
 <p><span class="my-face">✽-(ˆ▽ˆ)/✽✽\(ˆ▽ˆ)-✽</span></p>
 
-<p>© <span itemprop="copyrightYear">2018</span> 悬笔e绝.
+<p>© <span itemprop="copyrightYear">2018</span> lirich674.
     由 <a href="https://hexo.io/" target="_blank" class="external" rel="nofollow">Hexo</a> 强力驱动.
     版本号:v0.0.3.
 </p>
-<p>Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">悬笔e绝</span>. </p>
+<p>Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">lirich674</span>. </p>
 
             
 <div class="busuanzi-count">

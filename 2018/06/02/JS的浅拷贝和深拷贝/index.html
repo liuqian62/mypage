@@ -108,7 +108,7 @@
 
 
 
-  <meta name="keywords" content="悬笔e绝,个人博客,blog, web前端,大前端,学习,笔记,UNSLEEP" />
+  <meta name="keywords" content="lirich674,个人博客,blog, web前端,大前端,学习,笔记,UNSLEEP" />
 
 
 
@@ -123,7 +123,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS的浅拷贝和深拷贝">
 <meta property="og:url" content="http://www.xuanbiyijue.com/2018/06/02/JS的浅拷贝和深拷贝/index.html">
-<meta property="og:site_name" content="悬笔e绝">
+<meta property="og:site_name" content="lirich674">
 <meta property="og:description" content="浅拷贝1.常见的情况（1）对象等引用类型的赋值（2）ES6新增的Object.assign() ，详细可见阮一峰老师的书；（3）自己写一个浅拷贝 1234567function shallowClone(o)&amp;#123;  const obj = &amp;#123;&amp;#125;;  for( let i in o)&amp;#123;    obj[i] = o[i];  &amp;#125;  return obj;">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.xuanbiyijue.com/img/公众号二维码.jpg">
@@ -150,7 +150,7 @@
     site: {
       title: '火の意志',
       subtitle: '',
-      author: '悬笔e绝'
+      author: 'lirich674'
     },
     duoshuo: {
       userId: '0',
@@ -192,7 +192,7 @@
 
 
 
-  <title>JS的浅拷贝和深拷贝 | 悬笔e绝</title>
+  <title>JS的浅拷贝和深拷贝 | lirich674</title>
   
 
 
@@ -407,7 +407,7 @@
 					</div>
 					<div class="slide">
 						<div class="slide__bg slide__bg--9"></div>
-						<h2 class="word word--9">悬笔e绝</h2>
+						<h2 class="word word--9">lirich674</h2>
 					</div>
 				</div>
 				<nav class="slidenav">
@@ -432,8 +432,8 @@
 				<h2 class="word word--playful">悬笔<i>345</i>E绝</h2>
 			</section>
 		</div>
-    <a class="site-master-avatar" href="/images/悬笔e绝马赛克拼图.jpeg" target="_blank" title="logo">
-      <img class="site-master-avatar" itemprop="image" src="/images/悬笔e绝.jpg" alt="悬笔e绝" />
+    <a class="site-master-avatar" href="/images/lirich674马赛克拼图.jpeg" target="_blank" title="logo">
+      <img class="site-master-avatar" itemprop="image" src="/images/游泳.gif" alt="lirich674" />
     </a>
 </div>
 
@@ -480,13 +480,13 @@
     <link itemprop="mainEntityOfPage" href="http://www.xuanbiyijue.com/2018/06/02/JS的浅拷贝和深拷贝/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="悬笔e绝">
+      <meta itemprop="name" content="lirich674">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/悬笔e绝.jpg">
+      <meta itemprop="image" content="/images/游泳.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="悬笔e绝">
+      <meta itemprop="name" content="lirich674">
     </span>
 
     
@@ -641,7 +641,7 @@
 <h3 id="2-递归实现一个深拷贝："><a href="#2-递归实现一个深拷贝：" class="headerlink" title="2.递归实现一个深拷贝："></a>2.递归实现一个深拷贝：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> deepClone(o1, o2) &#123; </span><br><span class="line">     <span class="keyword">for</span> (<span class="built_in">let</span> k <span class="keyword">in</span> o2) &#123;</span><br><span class="line">         //如果属性还是对象的话，递归继续深克隆； 普通变量的话直接复制即可</span><br><span class="line">         <span class="keyword">if</span> (typeof o2[k] === <span class="string">'object'</span>) &#123;</span><br><span class="line">             o1[k] = &#123;&#125;;</span><br><span class="line">             deepClone(o1[k], o2[k]);</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             o1[k] = o2[k];</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="3-总结："><a href="#3-总结：" class="headerlink" title="3.总结："></a>3.总结：</h3><p>想自己写一个完美的深拷贝函数，需要考虑很多种情况，还是比较麻烦的，实际生产环境中，直接使用lodash的_.cloneDeep实现深度克隆就好；</p>
 <p>原文链接: <a href="https://mp.weixin.qq.com/s?__biz=MzUzMjM1MzE2MA==&amp;mid=2247484942&amp;idx=1&amp;sn=2c22e1bc85fd69a29634504b9264a4ea&amp;chksm=fab5dfe9cdc256ff5cd1535059120b623658d814617abab9911f252a500a322bac79c9fdbffc#rd" target="_blank" rel="noopener">公众号文章</a></p>
-<p>同时欢迎关注我的个人微信公众号：<br><img src="/img/公众号二维码.jpg" width="300" height="300" title="悬笔e绝"></p>
+<p>同时欢迎关注我的个人微信公众号：<br><img src="/img/公众号二维码.jpg" width="300" height="300" title="lirich674"></p>
 
       
     </div>
@@ -662,7 +662,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>Post author:</strong>
-    悬笔e绝
+    lirich674
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
@@ -717,19 +717,19 @@
   <div id="QR" style="display: none;">
 
     <div id="donateImg">
-        <img id="donateCute" src="/images/donateCute.jpg" style="width: 100%;" alt="悬笔e绝"/>
+        <img id="donateCute" src="/images/donateCute.jpg" style="width: 100%;" alt="lirich674"/>
     </div>
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.png" alt="悬笔e绝 WeChat Pay"/>
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="lirich674 WeChat Pay"/>
         <p>WeChat Pay</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.png" alt="悬笔e绝 Alipay"/>
+        <img id="alipay_qr" src="/images/alipay.png" alt="lirich674 Alipay"/>
         <p>Alipay</p>
       </div>
     
@@ -879,10 +879,10 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/card.jpg"
-                alt="悬笔e绝" />
+                src="/images/dog.jfif"
+                alt="lirich674" />
             
-              <p class="site-author-name" itemprop="name">悬笔e绝</p>
+              <p class="site-author-name" itemprop="name">lirich674</p>
               <p class="site-description motion-element" itemprop="description">敲代码最溜的BBOY🏃 Breaking最炸的程序猿👨‍💻‍~</p>
           </div>
 
@@ -981,7 +981,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.xuanbiyijue.com/" title="悬笔e绝" target="_blank">悬笔e绝</a>
+                    <a href="http://www.xuanbiyijue.com/" title="lirich674" target="_blank">lirich674</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
@@ -1038,11 +1038,11 @@
             <p>网站已运行：<span id="since"></span></p>
 <p><span class="my-face">✽-(ˆ▽ˆ)/✽✽\(ˆ▽ˆ)-✽</span></p>
 
-<p>© <span itemprop="copyrightYear">2018</span> 悬笔e绝.
+<p>© <span itemprop="copyrightYear">2018</span> lirich674.
     由 <a href="https://hexo.io/" target="_blank" class="external" rel="nofollow">Hexo</a> 强力驱动.
     版本号:v0.0.3.
 </p>
-<p>Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">悬笔e绝</span>. </p>
+<p>Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <span class="author" itemprop="copyrightHolder">lirich674</span>. </p>
 
             
 <div class="busuanzi-count">
